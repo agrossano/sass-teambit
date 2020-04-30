@@ -1,0 +1,268 @@
+/* #BDB5AF
+#FFE7D2
+#FFFFFF
+#2E4691
+#30488F
+#58402C */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+$dark-brown: #58402c;
+$section-centered-bg: #ffe7d2;
+
+@mixin blue-btn {
+  height: 35px;
+  line-height: 35px;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 14px;
+  background: #30488f;
+  border-radius: 7px;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
+.container--centered {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid $dark-brown;
+
+  .header__logo {
+    display: flex;
+
+    img {
+      width: 110px;
+      height: 35px;
+    }
+  }
+
+  .header__menu {
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      display: inline-block;
+      a {
+        display: block;
+      }
+    }
+  }
+}
+
+.jumbotron {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  .jumbotron__left {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      width: 84%;
+      color: $dark-brown;
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 70px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      width: 84%;
+      font-size: 22px;
+      line-height: 33px;
+      color: $dark-brown;
+      margin-bottom: 40px;
+    }
+
+    .left__buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 63%;
+    }
+
+    .blue-btn {
+      @include blue-btn;
+    }
+    span {
+      height: 35px;
+      width: 38px;
+      line-height: 35px;
+      font-size: 0.8125rem;
+      color: #bdb5af;
+      text-align: center;
+    }
+  }
+  .jumbotron__right {
+    img {
+      max-width: 570px;
+      margin-bottom: 70px;
+    }
+  }
+}
+
+.section--centered {
+  display: flex;
+  justify-content: center;
+  background-color: $section-centered-bg;
+}
+
+.hero {
+  .hero__text {
+    display: flex;
+    justify-content: center;
+
+    h3 {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      max-width: 628px;
+      font-size: 26px;
+      text-align: center;
+      line-height: 40px;
+      color: $dark-brown;
+    }
+  }
+  .images {
+    display: flex;
+    justify-content: center;
+  }
+
+  .images__caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 31%;
+    margin-bottom: 96px;
+
+    img {
+      max-width: 140px;
+      max-height: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .safe {
+      max-width: 60px;
+      max-height: auto;
+    }
+    span {
+      font-size: 18px;
+      line-height: 27px;
+      color: $dark-brown;
+      text-align: center;
+    }
+  }
+}
+
+.rabb {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 96px;
+  border-bottom: solid 1px $dark-brown;
+
+  img {
+    max-width: 280px;
+  }
+}
+
+.twocol {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  .section__screen {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+
+    img {
+      max-width: 768px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 40px;
+    max-width: 410px;
+    color: $dark-brown;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 33px;
+    color: $dark-brown;
+    max-width: 389px;
+  }
+}
+
+.twocoltwo {
+  display: flex;
+  .section__text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 500px;
+
+    h3 {
+      font-size: 26px;
+      line-height: 40px;
+      max-width: 410px;
+      color: $dark-brown;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 33px;
+      color: $dark-brown;
+      max-width: 389px;
+    }
+
+    a {
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 270px;
+      height: auto;
+    }
+  }
+  img {
+    max-width: 768px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.getstarted {
+  h5 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 628px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 50px;
+    color: $dark-brown;
+  }
+}
