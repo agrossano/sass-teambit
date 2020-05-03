@@ -1,12 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;
 
-600;700&display=swap);/* #BDB5AF
-#FFE7D2
-#FFFFFF
-#2E4691
-#30488F
-#58402C */
-* {
+600;700&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -45,11 +39,28 @@ a {
 }
 
 .header .header__menu li {
+  padding-right: 36px;
   display: inline-block;
 }
 
 .header .header__menu li a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #58402c;
   display: block;
+}
+
+.header .header__menu li .menu-btn {
+  border: 1px solid #30488f;
+  line-height: 33px;
+  background: #fff;
+  color: #30488f;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 7px;
 }
 
 .jumbotron {
@@ -248,6 +259,13 @@ a {
   height: auto;
 }
 
+.getstarted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
 .getstarted h5 {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -255,6 +273,105 @@ a {
   font-size: 40px;
   text-align: center;
   line-height: 50px;
+  color: #58402c;
+}
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  max-width: 628px;
+  margin: 35px auto;
+  padding: 20px 20px 20px 40px;
+  border: 1px solid #bdb5af;
+  border-radius: 7px;
+  background: #fff;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+blockquote p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #58402c;
+}
+
+blockquote .authors {
+  display: flex;
+  padding-top: 15px;
+}
+
+blockquote .authors img {
+  width: 38px;
+  height: auto;
+  vertical-align: middle;
+  margin: 5px;
+}
+
+blockquote .authors span {
+  display: block;
+}
+
+.buttons {
+  padding-bottom: 20px;
+}
+
+.blue-btn {
+  height: 35px;
+  line-height: 35px;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 14px;
+  background: #30488f;
+  border-radius: 7px;
+  border: none;
+  padding: 9px 26px;
+}
+
+footer {
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+footer figcaption {
+  display: flex;
+  align-items: flex-start;
+  max-width: 390px;
+  margin: 0 0 0 70px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #58402c;
+  padding-right: 107px;
+}
+
+footer img {
+  width: 140px;
+  vertical-align: middle;
+  padding-right: 15px;
+}
+
+footer div {
+  flex: 1;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer li {
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+footer span {
+  font-size: 18px;
+  line-height: 22px;
+  color: #58402c;
+  font-weight: 600;
+}
+
+footer a {
   color: #58402c;
 }
 

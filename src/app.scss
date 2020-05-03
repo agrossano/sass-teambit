@@ -1,42 +1,7 @@
-/* #BDB5AF
-#FFE7D2
-#FFFFFF
-#2E4691
-#30488F
-#58402C */
-
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
 
-$dark-brown: #58402c;
-$section-centered-bg: #ffe7d2;
-
-@mixin blue-btn {
-  height: 35px;
-  line-height: 35px;
-  padding: 0 20px;
-  color: #fff;
-  font-size: 14px;
-  background: #30488f;
-  border-radius: 7px;
-  border: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  -webkit-text-decoration-line: none;
-  text-decoration-line: none;
-}
-
-.container--centered {
-  max-width: 1150px;
-  margin-left: auto;
-  margin-right: auto;
-}
+@import "variables";
+@import "common";
 
 .header {
   display: flex;
@@ -60,9 +25,27 @@ a {
     }
 
     li {
+      padding-right: 36px;
       display: inline-block;
+
       a {
+        font-size: 14px;
+        font-weight: 600;
+        color: $dark-brown;
         display: block;
+      }
+
+      .menu-btn {
+        border: 1px solid #30488f;
+        line-height: 33px;
+        background: #fff;
+        color: #30488f;
+        height: 35px;
+        line-height: 35px;
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 7px;
       }
     }
   }
@@ -103,6 +86,7 @@ a {
     .blue-btn {
       @include blue-btn;
     }
+
     span {
       height: 35px;
       width: 38px;
@@ -112,6 +96,7 @@ a {
       text-align: center;
     }
   }
+
   .jumbotron__right {
     img {
       max-width: 570px;
@@ -141,6 +126,7 @@ a {
       color: $dark-brown;
     }
   }
+
   .images {
     display: flex;
     justify-content: center;
@@ -165,6 +151,7 @@ a {
       max-width: 60px;
       max-height: auto;
     }
+
     span {
       font-size: 18px;
       line-height: 27px;
@@ -219,6 +206,7 @@ a {
 
 .twocoltwo {
   display: flex;
+
   .section__text {
     display: flex;
     flex-direction: column;
@@ -248,6 +236,7 @@ a {
       height: auto;
     }
   }
+
   img {
     max-width: 768px;
     width: 100%;
@@ -256,6 +245,11 @@ a {
 }
 
 .getstarted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+
   h5 {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -263,6 +257,94 @@ a {
     font-size: 40px;
     text-align: center;
     line-height: 50px;
+    color: $dark-brown;
+  }
+}
+
+blockquote {
+  display: flex;
+  flex-direction: column;
+  max-width: 628px;
+  margin: 35px auto;
+  padding: 20px 20px 20px 40px;
+  border: 1px solid #bdb5af;
+  border-radius: 7px;
+  background: #fff;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  line-height: 1.5;
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark-brown;
+  }
+
+  .authors {
+    display: flex;
+    padding-top: 15px;
+
+    img {
+      width: 38px;
+      height: auto;
+      vertical-align: middle;
+      margin: 5px;
+    }
+    span {
+      display: block;
+    }
+  }
+}
+
+.buttons {
+  padding-bottom: 20px;
+}
+
+.blue-btn {
+  @include blue-btn;
+  padding: 9px 26px;
+}
+
+footer {
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 30px;
+
+  figcaption {
+    display: flex;
+    align-items: flex-start;
+    max-width: 390px;
+    margin: 0 0 0 70px;
+    font-size: 18px;
+    line-height: 23px;
+    color: $dark-brown;
+    padding-right: 107px;
+  }
+
+  img {
+    width: 140px;
+    vertical-align: middle;
+    padding-right: 15px;
+  }
+
+  div {
+    flex: 1;
+  }
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    padding-top: 15px;
+    font-size: 14px;
+  }
+  span {
+    font-size: 18px;
+    line-height: 22px;
+    color: $dark-brown;
+    font-weight: 600;
+  }
+  a {
     color: $dark-brown;
   }
 }
